@@ -12,6 +12,7 @@ struct PersonDetailsView: View {
     
     @StateObject var personDetailsViewModel: PersonDetailsViewModel
     @State var isBiographyExpanded: Bool = false
+    @State var isModalPresented: Bool = false
     @State var url: String? = nil
     
     let baseUrlImage = "https://image.tmdb.org/t/p/w500"
@@ -22,57 +23,53 @@ struct PersonDetailsView: View {
     }
     
     var body: some View {
-        if let details = personDetailsViewModel.castDetails {
-            GeometryReader { proxi in
-                ScrollView(.vertical, showsIndicators: false) {
-                    VStack(alignment: .leading, spacing: -15) {
-                        avatar(details: details, width: proxi.size.width)
-                        
-                        titleAndSubtitle(details: details)
-                        
-                        Group {
-                            VStack(alignment: .leading, spacing: .zero) {
-                                age(details: details)
-                                born(details: details)
+        Group {
+            if let details = personDetailsViewModel.castDetails {
+                GeometryReader { proxi in
+                    ScrollView(.vertical, showsIndicators: false) {
+                        VStack(alignment: .leading, spacing: -15) {
+                            avatar(details: details, width: proxi.size.width)
+                            
+                            titleAndSubtitle(details: details)
+                            
+                            Group {
+                                VStack(alignment: .leading, spacing: .zero) {
+                                    age(details: details)
+                                    born(details: details)
+                                }
+                                
+                                biography(details: details)
                             }
                             
-                            biography(details: details)
+                            ImageRow(image: details.images?.profiles ?? [], width: proxi.size.width, isModalPresented: $isModalPresented, url: $url)
+                            
+                            posterRow(result: details.combinedCredits?.cast ?? [], title: "Movies and TVs", endpoint: "/person/\(details.id ?? 0)/combined_credits", row: .cast)
                         }
-                        
-                        ImageRow(image: details.images?.profiles ?? [], url: $url)
-                        
-//                        imagesRow(images: details.images)
-                        
-                        posterRow(result: details.combinedCredits?.cast ?? [], title: "Movies and TVs", endpoint: "/person/\(details.id ?? 0)/combined_credits", row: .cast)
                     }
                 }
+                .onChange(of: url, perform: { _ in
+                    isModalPresented = true
+                })
+            } else {
+                ProgressView()
             }
-            .navigationBarTitleDisplayMode(.inline)
-        } else {
-            ProgressView()
         }
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 
 extension PersonDetailsView {
     @ViewBuilder
     func avatar(details: PersonDetails, width: CGFloat) -> some View {
-        ZStack {
+        VStack {
             Image(url: baseUrlImage + (details.profilePath ?? ""), width: width, height: 150, radius: 0)
                 .padding(.horizontal, 5)
                 .blur(radius: 10)
                 .clipped()
-            
-            HStack {
-                Spacer()
-                
-                Image(url: baseUrlImage + (details.profilePath ?? ""), width: 160, height: 180)
-                    .offset(x: 0, y: 55)
-                
-                Spacer()
-            }
-            .padding(.top, 30)
-            .padding(.vertical)
+
+            Image(url: baseUrlImage + (details.profilePath ?? ""), width: 160, height: 180)
+                .offset(y: -100)
+                .padding(.bottom, -80)
         }
     }
     
@@ -82,7 +79,6 @@ extension PersonDetailsView {
                     
             subTitle(details: details)
         }
-        .padding(.top, 55)
     }
 
     @ViewBuilder
@@ -205,8 +201,10 @@ extension PersonDetailsView {
 
 struct ImageRow: View {
     let image: [Profile]
-    
+    let width: CGFloat
+    @Binding var isModalPresented: Bool
     @Binding var url: String?
+    
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
@@ -227,6 +225,18 @@ struct ImageRow: View {
                     }
                 }
                 .padding()
+            }
+        }
+        .sheet(isPresented: $isModalPresented) {
+            if let url = url {
+                KFImage(URL(string: url))
+                    .cacheOriginalImage()
+                    .resizable()
+                    .cornerRadius(10)
+                    .padding()
+                    .shadow(radius: 2)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: width)
             }
         }
     }
