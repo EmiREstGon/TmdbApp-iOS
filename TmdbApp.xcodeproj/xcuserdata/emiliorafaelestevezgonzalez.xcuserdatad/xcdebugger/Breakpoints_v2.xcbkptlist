@@ -1,0 +1,917 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "1B527498-F501-4C17-B8F1-FD0FDE8D03D0"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "684F98F2-6232-47B2-8188-4443D5C424A0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "authenticate(username:password:errorCallback:successCallback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3F0C5B7-C56A-4631-B482-C15B8501D738"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "hasSessionId"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7209483F-FC8C-46DE-83DA-556EA8C12388"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "34"
+            endingLineNumber = "34"
+            landmarkName = "loadSessionId()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "684D1C50-99D6-42CE-BD6F-1519DC44BABC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "loadSessionId()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C236F878-7FA5-4E7E-908A-15C5A4877178"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "authenticate(username:password:errorCallback:successCallback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C236F878-7FA5-4E7E-908A-15C5A4877178 - 9403b0939d916c7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.Token) -&gt; () in TmdbApp.UserService.authenticate(userName: Swift.String, password: Swift.String, errorCallback: Swift.Optional&lt;(Swift.Optional&lt;TmdbApp.ErrorResponse&gt;) -&gt; ()&gt;, successCallback: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Data/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "C236F878-7FA5-4E7E-908A-15C5A4877178 - 9403b0939d916c7c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.Token) -&gt; () in TmdbApp.UserService.authenticate(username: Swift.String, password: Swift.String, errorCallback: Swift.Optional&lt;(Swift.Optional&lt;TmdbApp.ErrorResponse&gt;) -&gt; ()&gt;, successCallback: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Data/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "168">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "ECD08098-654E-43C0-AC28-42246A5F047A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "newToken(done:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "ECD08098-654E-43C0-AC28-42246A5F047A - bfd2e513648497ff"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TmdbApp.UserService.newToken(done: (TmdbApp.Token) -&gt; ()) -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Data/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "50"
+                  endingLineNumber = "50"
+                  offsetFromSymbolStart = "52">
+               </Location>
+               <Location
+                  uuid = "ECD08098-654E-43C0-AC28-42246A5F047A - 33fafeb2bb8d4703"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.Token) -&gt; () in TmdbApp.UserService.newToken(done: (TmdbApp.Token) -&gt; ()) -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Data/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "51"
+                  endingLineNumber = "51"
+                  offsetFromSymbolStart = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3DD8AD12-3078-448A-938D-62AADB671EFA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "61"
+            endingLineNumber = "61"
+            landmarkName = "newSession(requestToken:errorCallback:successCallback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56A6E100-1C47-4B9A-B995-C2EF3C02A1C7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/UserService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
+            landmarkName = "authenticate(username:password:errorCallback:successCallback:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "56A6E100-1C47-4B9A-B995-C2EF3C02A1C7 - a97c3753888d26f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.Token) -&gt; () in closure #1 (TmdbApp.Token) -&gt; () in TmdbApp.UserService.authenticate(userName: Swift.String, password: Swift.String, errorCallback: Swift.Optional&lt;(Swift.Optional&lt;TmdbApp.ErrorResponse&gt;) -&gt; ()&gt;, successCallback: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Data/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "56A6E100-1C47-4B9A-B995-C2EF3C02A1C7 - a97c3753888d26f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.Token) -&gt; () in closure #1 (TmdbApp.Token) -&gt; () in TmdbApp.UserService.authenticate(username: Swift.String, password: Swift.String, errorCallback: Swift.Optional&lt;(Swift.Optional&lt;TmdbApp.ErrorResponse&gt;) -&gt; ()&gt;, successCallback: Swift.Optional&lt;() -&gt; ()&gt;) -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Data/UserService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1A1E9C57-6BB9-4689-B939-D5AA8C21541A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Data/ApiService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "post(endPoint:body:callBack:errorCallback:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C8583830-6AF3-4027-A693-FC63364F8745"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Scenes/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7215972C-1F53-4789-8EF9-14EB680B0661"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Scenes/LoginViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "login()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7C3A3979-6E7E-4329-A0E2-BC571195D125"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/MediaDetailsView/MediaDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "loadDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7C3A3979-6E7E-4329-A0E2-BC571195D125 - d19ceeb61ebeff65"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.MovieDetalis) -&gt; () in TmdbApp.MediaDetailsViewModel.loadDetails() -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "784">
+               </Location>
+               <Location
+                  uuid = "7C3A3979-6E7E-4329-A0E2-BC571195D125 - 160094be81c5f865"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.MovieDetails) -&gt; () in TmdbApp.MediaDetailsViewModel.loadDetails() -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "944">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5CFE8B86-2062-4E0F-BB66-72C738AFDB93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/MediaDetailsView/MediaDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "loadDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "5CFE8B86-2062-4E0F-BB66-72C738AFDB93 - 59600c44bc2d1bd3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (TmdbApp.TvDetails) -&gt; () in TmdbApp.MediaDetailsViewModel.loadDetails() -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "852">
+               </Location>
+               <Location
+                  uuid = "5CFE8B86-2062-4E0F-BB66-72C738AFDB93 - 8d98f4ab21857b33"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (TmdbApp.TVDetails) -&gt; () in TmdbApp.MediaDetailsViewModel.loadDetails() -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "1672">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14BD9522-999F-481E-B393-DFD0388FD8EB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "14BD9522-999F-481E-B393-DFD0388FD8EB - 9070a4e19d4fe7cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.GeometryReader&lt;SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.title(details: TmdbApp.Result) -&gt; some&gt;&gt;.0, SwiftUI.Group&lt;SwiftUI.VStack&lt;SwiftUI.EmptyView&gt;&gt;)&gt;&gt;&gt;&gt;, SwiftUI.ProgressView&lt;SwiftUI.EmptyView, SwiftUI.EmptyView&gt;&gt; in TmdbApp.PersonDetailsView.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "14BD9522-999F-481E-B393-DFD0388FD8EB - 9070a4e19d4fe7cc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI._ConditionalContent&lt;SwiftUI.GeometryReader&lt;SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.title(details: TmdbApp.Result) -&gt; some&gt;&gt;.0, SwiftUI.Group&lt;SwiftUI.VStack&lt;SwiftUI.EmptyView&gt;&gt;)&gt;&gt;&gt;&gt;, SwiftUI.ProgressView&lt;SwiftUI.EmptyView, SwiftUI.EmptyView&gt;&gt; in TmdbApp.PersonDetailsView.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "22"
+                  endingLineNumber = "22"
+                  offsetFromSymbolStart = "856">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD8606AD-A30F-46C3-9BF5-066B95368160"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "145"
+            endingLineNumber = "145"
+            landmarkName = "biography(details:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BD8606AD-A30F-46C3-9BF5-066B95368160 - 22ed95c994abbe0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TmdbApp.PersonDetailsView.biography(details: TmdbApp.Cast) -&gt; some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "432">
+               </Location>
+               <Location
+                  uuid = "BD8606AD-A30F-46C3-9BF5-066B95368160 - 22ed95c994abbe0d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TmdbApp.PersonDetailsView.biography(details: TmdbApp.Cast) -&gt; some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "436">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E4EDE9AB-33BF-4829-ADC4-0C602567E401"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "posterRow(result:title:endpoint:row:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0BE88922-7A79-456C-951E-64CFD3820CF9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "0BE88922-7A79-456C-951E-64CFD3820CF9 - 6289f6f31793559f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt;&gt;&gt; in TmdbApp.MediaDetailsView.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "3352">
+               </Location>
+               <Location
+                  uuid = "0BE88922-7A79-456C-951E-64CFD3820CF9 - 6289f6f31793559f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt;&gt;&gt; in TmdbApp.MediaDetailsView.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "3416">
+               </Location>
+               <Location
+                  uuid = "0BE88922-7A79-456C-951E-64CFD3820CF9 - 6289f6f31793559f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt; in closure #1 () -&gt; SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt;&gt; in closure #1 (SwiftUI.GeometryProxy) -&gt; SwiftUI.ScrollView&lt;SwiftUI.VStack&lt;SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of TmdbApp.MediaDetailsView.backDrop(name: Swift.String, width: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.trailerRow(videos: Swift.Array&lt;TmdbApp.VideosResult&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.posterRow(result: Swift.Array&lt;TmdbApp.Result&gt;, title: Swift.String, endpoint: Swift.String, row: TmdbApp.RowType) -&gt; some&gt;&gt;.0)&gt;&gt;&gt; in TmdbApp.MediaDetailsView.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "7224">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CD5CA77-26C9-4BD5-967C-3D00157444F8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "loadDetails()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "594B5DE4-1797-4F88-8D85-6E9135A035AC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "loadDetails()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "594B5DE4-1797-4F88-8D85-6E9135A035AC - c49bbb48cdeca1e0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TmdbApp.PersonDetailsViewModel.loadDetails() -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "332">
+               </Location>
+               <Location
+                  uuid = "594B5DE4-1797-4F88-8D85-6E9135A035AC - d040c1e7be3ee57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.PersonDetails) -&gt; () in TmdbApp.PersonDetailsViewModel.loadDetails() -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "112">
+               </Location>
+               <Location
+                  uuid = "594B5DE4-1797-4F88-8D85-6E9135A035AC - d040c1e7be3ee57"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.PersonDetails) -&gt; () in TmdbApp.PersonDetailsViewModel.loadDetails() -&gt; ()"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "428">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97859EA7-FA04-4E7E-8A9C-28C204E44ED8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Components/ImageCardRow.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E29926D5-3DD0-434D-9891-D38387F4EE78"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Extensions/View+Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "destination(result:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF247956-76AB-4481-86D0-64DA0F4F9AA8"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Extensions/View+Extensions.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "destination(result:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "2FFBA7C9-1999-461F-9A2A-A14227559F5C"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Components/ImageCard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7652CAFC-148F-4F60-B99B-77D8A9ECBB1A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Components/ImageCard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "7652CAFC-148F-4F60-B99B-77D8A9ECBB1A - d01540a4edf01cab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.lineLimit(Swift.Optional&lt;Swift.Int&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.lineLimit(Swift.Optional&lt;Swift.Int&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(TmdbApp.Image, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt; in TmdbApp.ImageCard.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/Components/ImageCard.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "688">
+               </Location>
+               <Location
+                  uuid = "7652CAFC-148F-4F60-B99B-77D8A9ECBB1A - d01540a4edf01cab"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.lineLimit(Swift.Optional&lt;Swift.Int&gt;) -&gt; some&gt;&gt;.0, Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.lineLimit(Swift.Optional&lt;Swift.Int&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in closure #1 () -&gt; SwiftUI.TupleView&lt;(TmdbApp.Image, &lt;&lt;opaque return type of SwiftUI.View.frame(minWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxWidth: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, minHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, idealHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, maxHeight: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0)&gt; in TmdbApp.ImageCard.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/Components/ImageCard.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "1520">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "83065232-52D1-469B-86D6-29CAA653565A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/Components/ImageCard.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "06E66968-5799-4511-A4BD-6E319AA254FE"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "06E66968-5799-4511-A4BD-6E319AA254FE - c874e38cd9633dba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TmdbApp.ImageRow.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "236"
+                  endingLineNumber = "236"
+                  offsetFromSymbolStart = "580">
+               </Location>
+               <Location
+                  uuid = "06E66968-5799-4511-A4BD-6E319AA254FE - a340c45d4439df26"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt; in TmdbApp.ImageRow.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "237"
+                  endingLineNumber = "237"
+                  offsetFromSymbolStart = "672">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3F38F0BF-6741-48D4-A29E-E8460E24CC9A"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "3F38F0BF-6741-48D4-A29E-E8460E24CC9A - 9ea2baa247b7515d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (TmdbApp.Profile) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;TmdbApp.Profile&gt;, Swift.Optional&lt;Swift.String&gt;, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ScrollView&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt; in TmdbApp.ImageRow.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "2200">
+               </Location>
+               <Location
+                  uuid = "3F38F0BF-6741-48D4-A29E-E8460E24CC9A - 126517b68a4f8602"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (TmdbApp.Profile) -&gt; &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;TmdbApp.Profile&gt;, Swift.Optional&lt;Swift.String&gt;, &lt;&lt;opaque return type of SwiftUI.View.onTapGesture(count: Swift.Int, perform: () -&gt; ()) -&gt; some&gt;&gt;.0&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.ScrollView&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt; in TmdbApp.ImageRow.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "231"
+                  endingLineNumber = "231"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FE8CC9B6-3B6F-45D6-B44C-9F6B09618353"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "FE8CC9B6-3B6F-45D6-B44C-9F6B09618353 - 876b436b676d33aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in TmdbApp.ImageRow.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "976">
+               </Location>
+               <Location
+                  uuid = "FE8CC9B6-3B6F-45D6-B44C-9F6B09618353 - 876b436b676d33aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in TmdbApp.ImageRow.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "656">
+               </Location>
+               <Location
+                  uuid = "FE8CC9B6-3B6F-45D6-B44C-9F6B09618353 - 876b436b676d33aa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; Swift.Optional&lt;&lt;&lt;opaque return type of SwiftUI.View.frame(width: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, height: Swift.Optional&lt;CoreGraphics.CGFloat&gt;, alignment: SwiftUI.Alignment) -&gt; some&gt;&gt;.0&gt; in TmdbApp.ImageRow.body.getter : some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "239"
+                  endingLineNumber = "239"
+                  offsetFromSymbolStart = "1984">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

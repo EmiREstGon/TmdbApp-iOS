@@ -25,7 +25,9 @@ struct HomeView: View {
             }
         }
         .onAppear {
-            homeViewModel.fetchMovieList()
+            if homeViewModel.rows.isEmpty {
+                homeViewModel.fetchMovieList()
+            }
         }
     }
     
