@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		492DA2F82A36FC78005B6BBB /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DA2F72A36FC78005B6BBB /* HomeView.swift */; };
 		492DA2FA2A376E4B005B6BBB /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DA2F92A376E4B005B6BBB /* HomeViewModel.swift */; };
-		492DA2FC2A376FB2005B6BBB /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DA2FB2A376FB2005B6BBB /* DetailView.swift */; };
 		492DA2FE2A3770FA005B6BBB /* ImageCardRowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DA2FD2A3770FA005B6BBB /* ImageCardRowViewModel.swift */; };
 		492DA3002A37717D005B6BBB /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DA2FF2A37717D005B6BBB /* Type.swift */; };
 		492DA3022A377369005B6BBB /* HomeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DA3012A377369005B6BBB /* HomeRow.swift */; };
@@ -42,6 +41,8 @@
 		49A7C5522A43513C005FBB70 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7C5512A43513C005FBB70 /* PersonDetailsView.swift */; };
 		49A7C5542A435150005FBB70 /* PersonDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7C5532A435150005FBB70 /* PersonDetailsViewModel.swift */; };
 		49A7C5572A435C58005FBB70 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7C5562A435C58005FBB70 /* StringHelper.swift */; };
+		49E94E6C2A4C8768006C990D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E94E6B2A4C8768006C990D /* GridView.swift */; };
+		49E94E6E2A4C8776006C990D /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E94E6D2A4C8776006C990D /* GridViewModel.swift */; };
 		49FA93992A420BF000A30B8A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA93982A420BF000A30B8A /* WebView.swift */; };
 		49FF1E332A3A13520055EFA3 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF1E322A3A13520055EFA3 /* View+Extensions.swift */; };
 		49FF1E372A3A15F60055EFA3 /* MediaDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FF1E362A3A15F60055EFA3 /* MediaDetailsView.swift */; };
@@ -69,7 +70,6 @@
 /* Begin PBXFileReference section */
 		492DA2F72A36FC78005B6BBB /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		492DA2F92A376E4B005B6BBB /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		492DA2FB2A376FB2005B6BBB /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		492DA2FD2A3770FA005B6BBB /* ImageCardRowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardRowViewModel.swift; sourceTree = "<group>"; };
 		492DA2FF2A37717D005B6BBB /* Type.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		492DA3012A377369005B6BBB /* HomeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRow.swift; sourceTree = "<group>"; };
@@ -102,6 +102,8 @@
 		49A7C5512A43513C005FBB70 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		49A7C5532A435150005FBB70 /* PersonDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModel.swift; sourceTree = "<group>"; };
 		49A7C5562A435C58005FBB70 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		49E94E6B2A4C8768006C990D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
+		49E94E6D2A4C8776006C990D /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		49FA93982A420BF000A30B8A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		49FF1E322A3A13520055EFA3 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
 		49FF1E362A3A15F60055EFA3 /* MediaDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaDetailsView.swift; sourceTree = "<group>"; };
@@ -259,12 +261,9 @@
 		4981D3A02A2E33FC00D63AD4 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				49E94E6A2A4C8746006C990D /* Grid */,
+				49E94E692A4C86D1006C990D /* Image */,
 				492F82222A2F2BA1007032A4 /* Login */,
-				4981D3A12A2E34E200D63AD4 /* ImageCard.swift */,
-				4981D3A62A2E394300D63AD4 /* Image.swift */,
-				4981D3AB2A2E458000D63AD4 /* ImageCardRow.swift */,
-				492DA2FB2A376FB2005B6BBB /* DetailView.swift */,
-				492DA2FD2A3770FA005B6BBB /* ImageCardRowViewModel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -300,6 +299,26 @@
 				49A7C5562A435C58005FBB70 /* StringHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		49E94E692A4C86D1006C990D /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				4981D3A62A2E394300D63AD4 /* Image.swift */,
+				4981D3A12A2E34E200D63AD4 /* ImageCard.swift */,
+				4981D3AB2A2E458000D63AD4 /* ImageCardRow.swift */,
+				492DA2FD2A3770FA005B6BBB /* ImageCardRowViewModel.swift */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		49E94E6A2A4C8746006C990D /* Grid */ = {
+			isa = PBXGroup;
+			children = (
+				49E94E6B2A4C8768006C990D /* GridView.swift */,
+				49E94E6D2A4C8776006C990D /* GridViewModel.swift */,
+			);
+			path = Grid;
 			sourceTree = "<group>";
 		};
 		49FF1E342A3A13680055EFA3 /* Extensions */ = {
@@ -462,9 +481,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49E94E6E2A4C8776006C990D /* GridViewModel.swift in Sources */,
 				492DA3022A377369005B6BBB /* HomeRow.swift in Sources */,
 				492DA2FA2A376E4B005B6BBB /* HomeViewModel.swift in Sources */,
-				492DA2FC2A376FB2005B6BBB /* DetailView.swift in Sources */,
 				492F82242A2F2BE7007032A4 /* Input.swift in Sources */,
 				492DA3042A37739A005B6BBB /* ResultList.swift in Sources */,
 				4981D3772A2E338800D63AD4 /* ContentView.swift in Sources */,
@@ -487,6 +506,7 @@
 				492F822E2A2F840C007032A4 /* LoginView.swift in Sources */,
 				492F82312A2F8473007032A4 /* LoginViewModel.swift in Sources */,
 				492DA3002A37717D005B6BBB /* Type.swift in Sources */,
+				49E94E6C2A4C8768006C990D /* GridView.swift in Sources */,
 				492DA2FE2A3770FA005B6BBB /* ImageCardRowViewModel.swift in Sources */,
 				492DA2F82A36FC78005B6BBB /* HomeView.swift in Sources */,
 				492F82382A2F8946007032A4 /* ApiService.swift in Sources */,

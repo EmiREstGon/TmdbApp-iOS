@@ -16,7 +16,7 @@ struct ImageCardRow: View {
     var type: RowType = .media
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, spacing: 2.5) {
             HStack {
                 Text(title)
                     .font(.title2)
@@ -37,6 +37,7 @@ struct ImageCardRow: View {
                             .toDetailsView(result: card)
                     }
                 }
+                .padding(.top)
                 .padding(.horizontal)
             }
         }
@@ -44,7 +45,9 @@ struct ImageCardRow: View {
     
     @ViewBuilder
     func navigationBody() -> some View {
-        SwiftUI.Image(systemName: "chevron.right")
+        Text("More")
+        
+        SwiftUI.Image(systemName: "plus")
             .foregroundColor(.blue)
     }
     

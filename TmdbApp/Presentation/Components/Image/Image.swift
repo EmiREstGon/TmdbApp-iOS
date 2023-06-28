@@ -17,7 +17,7 @@ struct Image: View {
     var radius: CGFloat
     var mode: SwiftUI.ContentMode
     
-    init(url: String, placeholder: String = "placeholder-poster", width: CGFloat = 90, height: CGFloat = 160, shadow: CGFloat = 2, radius: CGFloat = 10, mode: SwiftUI.ContentMode = .fill) {
+    init(url: String, placeholder: String = "placeholder-poster", width: CGFloat = 90, height: CGFloat = 160, shadow: CGFloat = 5, radius: CGFloat = 10, mode: SwiftUI.ContentMode = .fill) {
         self.url = url
         self.placeholder = placeholder
         self.width = width

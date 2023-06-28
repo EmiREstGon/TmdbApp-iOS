@@ -38,7 +38,7 @@ struct MediaDetailsView: View {
                         
                         trailerRow(videos: details.videos.results)
                         
-                        seasonRow(details: details, width: proxi.size.width)
+                        seasonRow(details: details)
                         
                         posterRow(result: details.recommendations?.result ?? [], title: "Recommendations", endpoint: "/\(mediaDetailsViewModel.type)/\(details.id)/credits", row: .cast)
                         
@@ -56,7 +56,7 @@ struct MediaDetailsView: View {
 extension MediaDetailsView {
     @ViewBuilder
     func backDrop(name: String, width: CGFloat) -> some View {
-        Image(url: baseUrlImage + name, width: width, height: 250, radius: 0)
+        Image(url: baseUrlImage + name, placeholder: "placeholder-backdrop", width: width, height: 250, shadow: 2.5, radius: 0)
     }
     
     @ViewBuilder
@@ -138,7 +138,7 @@ extension MediaDetailsView {
     }
     
     @ViewBuilder
-    func seasonRow(details: DetailsWrapper, width: CGFloat) -> some View {
+    func seasonRow(details: DetailsWrapper) -> some View {
         if let seasons = details.seasons, seasons.count > 0 {
             VStack(alignment: .leading, spacing: 5) {
                 Text("Seasons")
@@ -147,16 +147,12 @@ extension MediaDetailsView {
                     .padding(.leading)
                     .padding(.bottom, 5)
                 
-                Image(url: baseUrlImage + (seasons.last?.posterPath ?? ""), width: width, height: 240)
+                seasonCard(season: seasons.last ?? Season(airDate: "", episodeCount: 0, id: 0, name: "", overview: "", posterPath: "", seasonNumber: 0), width: .infinity, height: 240)
                     .padding(.horizontal)
                     .padding(.bottom)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 15) {
-                        ForEach(seasons.prefix(seasons.count - 1).reversed(), id: \.id) { season in
-                            Image(url: baseUrlImage + (season.posterPath ?? ""), width: 300, height: 190)
-                        }
-                        
                         ForEach(seasons.prefix(seasons.count - 1).reversed(), id: \.id) { season in
                             seasonCard(season: season, width: 300, height: 190)
                         }
@@ -169,21 +165,26 @@ extension MediaDetailsView {
         }
     }
     
+    @ViewBuilder
     func seasonCard(season: Season, width: CGFloat, height: CGFloat) -> some View {
-        VStack {
-            KFImage(URL(string: baseUrlImage + (season.posterPath ?? "")))
-                .placeholder() {
-                    SwiftUI.Image("placeholder-backdrop")
-                        .resizable()
-                        .scaledToFill()
-                }
-                .cacheOriginalImage()
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .frame(width: width, height: height)
-                .clipped()
+        let releaseYear = StringHelper().extractYearFromString(season.airDate ?? "")
+        
+        ZStack{
+            Image(url: "https://image.tmdb.org/t/p/w500" + (season.posterPath ?? ""), width: width, height: height)
+            LinearGradient(gradient: Gradient(colors: [.clear, .black]), startPoint: .top, endPoint: .bottom)
                 .cornerRadius(10)
-                .shadow(radius: 2)
+            
+            VStack(alignment: .leading, spacing: 5) {
+                Text(season.name ?? "")
+                    .foregroundColor(.white)
+                    .bold()
+                    .font(.system(size: 28))
+                
+                Text("\(season.episodeCount ?? 0) Episodes | \(releaseYear ?? "")")
+            }
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .bottomLeading)
+            .foregroundColor(.white)
+            .padding()
         }
     }
     

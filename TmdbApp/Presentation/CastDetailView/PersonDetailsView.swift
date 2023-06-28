@@ -45,7 +45,7 @@ struct PersonDetailsView: View {
                     }
                 }
                 .onChange(of: url, perform: { _ in
-                    if (url != "") {
+                    if (url != nil) {
                         isModalPresented = true
                     }
                 })
@@ -111,12 +111,12 @@ extension PersonDetailsView {
     @ViewBuilder
     func age(details: PersonDetails) -> some View {
         let isBirthdayNil: Bool = details.birthday == nil || details.birthday == ""
-        let birthday: Int? = Int(StringHelper().extractYearFromString(details.birthday ?? "") ?? "")
+        let birthYear: Int? = Int(StringHelper().extractYearFromString(details.birthday ?? "") ?? "")
         let currentYear: Int = Calendar.current.component(.year, from: Date())
-        let deathday: Int? = details.deathday?.description != nil ? Int(StringHelper().extractYearFromString(details.deathday ?? "") ?? "") : currentYear
+        let deathYear: Int? = details.deathday?.description != nil ? Int(StringHelper().extractYearFromString(details.deathday ?? "") ?? "") : currentYear
         let birthdayText: String = (StringHelper().convertDateString(details.birthday ?? "") ?? "")
         let deathdayText: String = details.deathday?.description != nil ? (StringHelper().convertDateString(details.deathday ?? "") ?? "") : "now"
-        let age: Int = (deathday ?? 0) - (birthday ?? 0)
+        let age: Int = (deathYear ?? 0) - (birthYear ?? 0)
         let ageText = "\(age) years old (\(birthdayText) - \(deathdayText))"
         
         VStack(alignment: .leading, spacing: 5) {
@@ -245,7 +245,7 @@ struct ImageRow: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: width)
                     .onDisappear() {
-                        self.url = ""
+                        self.url = nil
                     }
             }
         }
