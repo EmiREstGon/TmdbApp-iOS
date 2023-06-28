@@ -382,8 +382,8 @@
             filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -430,8 +430,8 @@
             filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "145"
-            endingLineNumber = "145"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "biography(details:)"
             landmarkType = "7">
             <Locations>
@@ -478,8 +478,8 @@
             filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "196"
-            endingLineNumber = "196"
+            startingLineNumber = "203"
+            endingLineNumber = "203"
             landmarkName = "posterRow(result:title:endpoint:row:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -764,8 +764,8 @@
             filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "230"
-            endingLineNumber = "230"
+            startingLineNumber = "237"
+            endingLineNumber = "237"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -812,8 +812,8 @@
             filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "223"
-            endingLineNumber = "223"
+            startingLineNumber = "230"
+            endingLineNumber = "230"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -860,8 +860,8 @@
             filePath = "TmdbApp/Presentation/CastDetailView/PersonDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "231"
-            endingLineNumber = "231"
+            startingLineNumber = "238"
+            endingLineNumber = "238"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>

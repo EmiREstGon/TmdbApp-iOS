@@ -10,6 +10,7 @@ import SwiftUI
 struct HomeView: View {
     
     @ObservedObject var homeViewModel = HomeViewModel()
+    @State private var isButtonEnabled = true
     
     var body: some View {
         ScrollView {
@@ -22,6 +23,14 @@ struct HomeView: View {
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 logout
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                refresh
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                search
             }
         }
         .onAppear {
@@ -38,6 +47,29 @@ struct HomeView: View {
             Text("Logout")
             SwiftUI.Image(systemName: "door.left.hand.open")
         }
+    }
+    
+    var search: some View {  // Search Button
+        Button(action: {
+            
+        }) {
+            SwiftUI.Image(systemName: "magnifyingglass")
+        }
+    }
+    
+    var refresh: some View {  // Refresh Button
+        Button(action: {
+            isButtonEnabled = false     // Deshabilitar el botón al hacer click
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
+                isButtonEnabled = true  // Habilitar el botón después de 3 segundos
+            }
+            
+            homeViewModel.fetchMovieList()
+        }) {
+            SwiftUI.Image(systemName: "arrow.triangle.2.circlepath")
+        }
+        .disabled(!isButtonEnabled) // Deshabilitar el botón si isButtonEnabled es falso
     }
 }
 

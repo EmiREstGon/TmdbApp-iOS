@@ -33,10 +33,7 @@ struct PersonDetailsView: View {
                             titleAndSubtitle(details: details)
                             
                             Group {
-                                VStack(alignment: .leading, spacing: .zero) {
-                                    age(details: details)
-                                    born(details: details)
-                                }
+                                ageAndBorn(details: details)
                                 
                                 biography(details: details)
                             }
@@ -48,7 +45,9 @@ struct PersonDetailsView: View {
                     }
                 }
                 .onChange(of: url, perform: { _ in
-                    isModalPresented = true
+                    if (url != "") {
+                        isModalPresented = true
+                    }
                 })
             } else {
                 ProgressView()
@@ -73,14 +72,6 @@ extension PersonDetailsView {
         }
     }
     
-    func titleAndSubtitle(details: PersonDetails) -> some View {
-        VStack {
-            title(details: details)
-                    
-            subTitle(details: details)
-        }
-    }
-
     @ViewBuilder
     func title(details: PersonDetails) -> some View {
         HStack {
@@ -107,6 +98,14 @@ extension PersonDetailsView {
             Spacer()
         }
         .padding(.bottom)
+    }
+    
+    func titleAndSubtitle(details: PersonDetails) -> some View {
+        VStack {
+            title(details: details)
+                    
+            subTitle(details: details)
+        }
     }
 
     @ViewBuilder
@@ -138,6 +137,14 @@ extension PersonDetailsView {
                 .font(.title3)
         }
         .padding(.horizontal)
+    }
+    
+    func ageAndBorn(details: PersonDetails) -> some View {
+        VStack(alignment: .leading, spacing: .zero) {
+            age(details: details)
+                    
+            born(details: details)
+        }
     }
 
     @ViewBuilder
@@ -208,7 +215,7 @@ struct ImageRow: View {
     var body: some View {
         VStack {
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack {
+                HStack(spacing: 15) {
                     ForEach(image, id: \.filePath) { image in
                         let url = "https://image.tmdb.org/t/p/w500" + (image.filePath ?? "")
                         
@@ -232,11 +239,14 @@ struct ImageRow: View {
                 KFImage(URL(string: url))
                     .cacheOriginalImage()
                     .resizable()
-                    .cornerRadius(10)
+                    .cornerRadius(20)
                     .padding()
                     .shadow(radius: 2)
                     .aspectRatio(contentMode: .fit)
                     .frame(width: width)
+                    .onDisappear() {
+                        self.url = ""
+                    }
             }
         }
     }
