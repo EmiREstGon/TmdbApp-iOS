@@ -24,7 +24,7 @@ struct ImageCard: View {
                     .font(.headline)
                     .lineLimit(1)
                 
-                if let subtitle = result.subtitle {     // if subtitle != de null
+                if let subtitle = result.subtitle {
                     Text(StringHelper().convertDateString(subtitle) ?? subtitle)
                         .lineLimit(1)
                 }

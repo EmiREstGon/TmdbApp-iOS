@@ -12,7 +12,7 @@ struct MediaDetailsView: View {
     
     @StateObject var mediaDetailsViewModel: MediaDetailsViewModel
     var baseUrlImage: String = "https://image.tmdb.org/t/p/w500"
-
+    
     init(id: Int, type: Results){
         let viewModel = MediaDetailsViewModel(id: id, type: type)
         _mediaDetailsViewModel = StateObject(wrappedValue: viewModel)
@@ -27,23 +27,21 @@ struct MediaDetailsView: View {
                         
                         Group {
                             poster(details: details)
-
+                            
                             tagline(details: details)
-
+                            
                             overview(details: details)
-
-//                            if let seasons = details.seasson, seasons.count > 0 {
-//                                seasonRow(seassons: seasons)
-//                            }
                         }
                         .padding()
-
+                        
                         posterRow(result: details.credits?.castResults ?? [], title: "Top Bill Cast", endpoint: "/\(mediaDetailsViewModel.type)/\(details.id)/credits", row: .cast)
                         
                         trailerRow(videos: details.videos.results)
-
+                        
+                        seasonRow(details: details, width: proxi.size.width)
+                        
                         posterRow(result: details.recommendations?.result ?? [], title: "Recommendations", endpoint: "/\(mediaDetailsViewModel.type)/\(details.id)/credits", row: .cast)
-
+                        
                         posterRow(result: details.similar?.result ?? [], title: "Similar", endpoint: "/\(mediaDetailsViewModel.type)/\(details.id)/credits", row: .cast)
                     }
                 }
@@ -57,7 +55,7 @@ struct MediaDetailsView: View {
 
 extension MediaDetailsView {
     @ViewBuilder
-    func backDrop(name:String, width: CGFloat) -> some View {
+    func backDrop(name: String, width: CGFloat) -> some View {
         Image(url: baseUrlImage + name, width: width, height: 250, radius: 0)
     }
     
@@ -65,7 +63,7 @@ extension MediaDetailsView {
     func posterRow(result: [Result], title: String, endpoint: String, row: RowType) -> some View {
         if (!result.isEmpty) {
             ImageCardRow(title: title, imageCards: result, endPoint: endpoint, params: [:])
-                        .padding(.top)
+                .padding(.top)
         }
     }
     
@@ -80,7 +78,7 @@ extension MediaDetailsView {
                     .bold()
                     .font(.title)
                 
-                Text(StringHelper().convertDateString(details.date) ?? "")
+                Text(StringHelper().convertDateString(details.date) ?? "Unknown release date")
                     .bold()
                 
                 Text(details.status ?? "")
@@ -94,9 +92,11 @@ extension MediaDetailsView {
     
     @ViewBuilder
     func tagline(details: DetailsWrapper) -> some View {
-        Text(details.tagline)
-            .italic()
-            .fontWeight(.light)
+        if (details.tagline != "") {
+            Text(details.tagline)
+                .italic()
+                .fontWeight(.light)
+        }
     }
     
     @ViewBuilder
@@ -115,7 +115,7 @@ extension MediaDetailsView {
                 Text("Trailers")
                     .font(.title2)
                     .fontWeight(.semibold)
-                    .padding(.horizontal)
+                    .padding(.leading)
                     .padding(.bottom, 5)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
@@ -134,19 +134,57 @@ extension MediaDetailsView {
             }
             .padding(.top)
             .padding(.vertical)
-        }    
+        }
     }
     
     @ViewBuilder
-    func seasonRow(seasons: Season) -> some View {
-        Text("Seasons")
-            .bold()
-            .font(.title2)
+    func seasonRow(details: DetailsWrapper, width: CGFloat) -> some View {
+        if let seasons = details.seasons, seasons.count > 0 {
+            VStack(alignment: .leading, spacing: 5) {
+                Text("Seasons")
+                    .bold()
+                    .font(.title2)
+                    .padding(.leading)
+                    .padding(.bottom, 5)
+                
+                Image(url: baseUrlImage + (seasons.last?.posterPath ?? ""), width: width, height: 240)
+                    .padding(.horizontal)
+                    .padding(.bottom)
+                
+                ScrollView(.horizontal, showsIndicators: false) {
+                    HStack(spacing: 15) {
+                        ForEach(seasons.prefix(seasons.count - 1).reversed(), id: \.id) { season in
+                            Image(url: baseUrlImage + (season.posterPath ?? ""), width: 300, height: 190)
+                        }
+                        
+                        ForEach(seasons.prefix(seasons.count - 1).reversed(), id: \.id) { season in
+                            seasonCard(season: season, width: 300, height: 190)
+                        }
+                    }
+                    .padding(.horizontal)
+                    .padding(.bottom)
+                }
+            }
+            .padding(.top)
+        }
     }
     
-    @ViewBuilder
-    func seasonCard(seasons: Season, width: CGFloat, height: CGFloat) -> some View {
-        
+    func seasonCard(season: Season, width: CGFloat, height: CGFloat) -> some View {
+        VStack {
+            KFImage(URL(string: baseUrlImage + (season.posterPath ?? "")))
+                .placeholder() {
+                    SwiftUI.Image("placeholder-backdrop")
+                        .resizable()
+                        .scaledToFill()
+                }
+                .cacheOriginalImage()
+                .resizable()
+                .aspectRatio(contentMode: .fill)
+                .frame(width: width, height: height)
+                .clipped()
+                .cornerRadius(10)
+                .shadow(radius: 2)
+        }
     }
     
     @ViewBuilder

@@ -494,8 +494,8 @@
             filePath = "TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "41"
-            endingLineNumber = "41"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "body"
             landmarkType = "24">
             <Locations>
@@ -911,6 +911,86 @@
                   offsetFromSymbolStart = "1984">
                </Location>
             </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "538B76BC-A5A1-4839-AFB3-E63539C472D1"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "156"
+            endingLineNumber = "156"
+            landmarkName = "seasonRow(details:width:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "538B76BC-A5A1-4839-AFB3-E63539C472D1 - 190b3798b0f20f04"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ForEach&lt;Swift.ReversedCollection&lt;Swift.ArraySlice&lt;TmdbApp.Season&gt;&gt;, Swift.Optional&lt;Swift.Int&gt;, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.seasonCard(season: TmdbApp.Season, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ForEach&lt;Swift.ReversedCollection&lt;Swift.ArraySlice&lt;TmdbApp.Season&gt;&gt;, Swift.Optional&lt;Swift.Int&gt;, TmdbApp.Image&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ScrollView&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in TmdbApp.MediaDetailsView.seasonRow(details: TmdbApp.DetailsWrapper, width: CoreGraphics.CGFloat) -&gt; some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "160"
+                  endingLineNumber = "160"
+                  offsetFromSymbolStart = "724">
+               </Location>
+               <Location
+                  uuid = "538B76BC-A5A1-4839-AFB3-E63539C472D1 - ae1c397dd588f212"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (TmdbApp.Season) -&gt; TmdbApp.Image in closure #1 () -&gt; SwiftUI.TupleView&lt;(SwiftUI.ForEach&lt;Swift.ReversedCollection&lt;Swift.ArraySlice&lt;TmdbApp.Season&gt;&gt;, Swift.Optional&lt;Swift.Int&gt;, &lt;&lt;opaque return type of TmdbApp.MediaDetailsView.seasonCard(season: TmdbApp.Season, width: CoreGraphics.CGFloat, height: CoreGraphics.CGFloat) -&gt; some&gt;&gt;.0&gt;, SwiftUI.ForEach&lt;Swift.ReversedCollection&lt;Swift.ArraySlice&lt;TmdbApp.Season&gt;&gt;, Swift.Optional&lt;Swift.Int&gt;, TmdbApp.Image&gt;)&gt; in closure #1 () -&gt; &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0 in closure #1 () -&gt; SwiftUI.TupleView&lt;(&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, &lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0, SwiftUI.ScrollView&lt;&lt;&lt;opaque return type of SwiftUI.View.padding(SwiftUI.Edge.Set, Swift.Optional&lt;CoreGraphics.CGFloat&gt;) -&gt; some&gt;&gt;.0&gt;)&gt; in TmdbApp.MediaDetailsView.seasonRow(details: TmdbApp.DetailsWrapper, width: CoreGraphics.CGFloat) -&gt; some"
+                  moduleName = "TmdbApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/emiliorafaelestevezgonzalez/Documents/Projects/TmdbApp/TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "161"
+                  endingLineNumber = "161"
+                  offsetFromSymbolStart = "84">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3824B4CC-55A3-409B-BD59-2387EB4EE7A2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "seasonRow(details:width:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "69D87EE4-7AA1-4CAF-83C5-CD45E4E2A88F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TmdbApp/Presentation/MediaDetailsView/MediaDetailsView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
+            landmarkName = "seasonCard(season:width:height:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
