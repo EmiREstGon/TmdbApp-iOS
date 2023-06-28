@@ -35,7 +35,7 @@ struct HomeView: View {
         }
         .onAppear {
             if homeViewModel.rows.isEmpty {
-                homeViewModel.fetchMovieList()
+                homeViewModel.fetchContentList()
             }
         }
     }
@@ -65,7 +65,7 @@ struct HomeView: View {
                 isButtonEnabled = true  // Habilitar el botón después de 3 segundos
             }
             
-            homeViewModel.fetchMovieList()
+            homeViewModel.fetchContentList()
         }) {
             SwiftUI.Image(systemName: "arrow.triangle.2.circlepath")
         }

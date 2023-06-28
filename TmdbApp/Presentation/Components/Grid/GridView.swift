@@ -8,9 +8,19 @@
 import SwiftUI
 
 struct GridView: View {
+    @StateObject var gridViewModel: GridViewModel
+
+    init() {
+        let viewModel = GridViewModel()
+        _gridViewModel = StateObject(wrappedValue: viewModel)
+    }
+    
     var body: some View {
+        Text("Grid")
         Grid(alignment: .leading) {
-//            ImageCardRow(endPoint: )
+            ForEach(gridViewModel.rows) { row in
+                ImageCardRow(title: row.title, imageCards: row.list.result, endPoint: row.endPoint, params: row.params)
+            }
         }
     }
 }

@@ -13,7 +13,7 @@ struct MediaDetailsView: View {
     @StateObject var mediaDetailsViewModel: MediaDetailsViewModel
     var baseUrlImage: String = "https://image.tmdb.org/t/p/w500"
     
-    init(id: Int, type: Results){
+    init(id: Int, type: Results) {
         let viewModel = MediaDetailsViewModel(id: id, type: type)
         _mediaDetailsViewModel = StateObject(wrappedValue: viewModel)
     }

@@ -8,8 +8,8 @@
 import SwiftUI
 
 class HomeViewModel: ObservableObject {
-    
     @Published var rows: [HomeRow] = []
+    
     var endpoints: [Endpoint] = [
         Endpoint(path: "movie/popular", title: "Popular Movies"),
         Endpoint(path: "movie/top_rated", title: "Top Rated Movies"),
@@ -20,7 +20,7 @@ class HomeViewModel: ObservableObject {
         Endpoint(path: "trending/all/week", title: "Trending Now")
     ]
     
-    func fetchMovieList() {
+    func fetchContentList() {
         for endpoint in endpoints {
             ApiService.get(endPoint: endpoint.path) { (result: ResultList) in
                 self.rows.append(.init(title: endpoint.title, list: result, endPoint: endpoint.path, params: endpoint.params))

@@ -24,9 +24,10 @@ struct ImageCardRow: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: Text("Redirection")) {
+                NavigationLink(destination: GridView().navigationTitle(title)) {
                     navigationBody()
                 }
+                .navigationBarTitleDisplayMode(.inline)
             }
             .padding(.horizontal)
             

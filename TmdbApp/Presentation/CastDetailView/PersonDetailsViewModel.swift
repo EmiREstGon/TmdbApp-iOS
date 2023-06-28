@@ -25,8 +25,6 @@ class PersonDetailsViewModel: ObservableObject {
 
         ApiService.get(endPoint: "person/\(id)", parameters: param) { (details: PersonDetails) in
             self.castDetails = details
-//            print("calling get for person/\(self.id)" )
-//            print (details.combinedCredits?.cast ?? [])
         }
     }
 }
