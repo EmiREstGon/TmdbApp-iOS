@@ -18,8 +18,8 @@ struct HomeView: View {
                 ImageCardRow(title: row.title, imageCards: row.list.result, endPoint: row.endPoint, params: row.params)
             }
         }
-        .scrollIndicators(.hidden)
         .navigationTitle("TMDB")
+        .scrollIndicators(.hidden)
         .toolbar {
             ToolbarItem(placement: .navigationBarLeading) {
                 logout
@@ -50,9 +50,7 @@ struct HomeView: View {
     }
     
     var search: some View {  // Search Button
-        Button(action: {
-            
-        }) {
+        NavigationLink(destination: SearchView(query: "")) {
             SwiftUI.Image(systemName: "magnifyingglass")
         }
     }

@@ -24,10 +24,10 @@ struct ImageCardRow: View {
                 
                 Spacer()
                 
-                NavigationLink(destination: GridView().navigationTitle(title)) {
+                NavigationLink(destination: GridView(endpoint: endPoint, params: params, type: type).navigationTitle(title)) {
                     navigationBody()
                 }
-                .navigationBarTitleDisplayMode(.inline)
+//                .navigationBarTitleDisplayMode(.inline)
             }
             .padding(.horizontal)
             

@@ -41,6 +41,8 @@
 		49A7C5522A43513C005FBB70 /* PersonDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7C5512A43513C005FBB70 /* PersonDetailsView.swift */; };
 		49A7C5542A435150005FBB70 /* PersonDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7C5532A435150005FBB70 /* PersonDetailsViewModel.swift */; };
 		49A7C5572A435C58005FBB70 /* StringHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A7C5562A435C58005FBB70 /* StringHelper.swift */; };
+		49ACB4DF2A4DD4CE004FA33C /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ACB4DE2A4DD4CE004FA33C /* SearchView.swift */; };
+		49ACB4E12A4DD4E4004FA33C /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49ACB4E02A4DD4E4004FA33C /* SearchViewModel.swift */; };
 		49E94E6C2A4C8768006C990D /* GridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E94E6B2A4C8768006C990D /* GridView.swift */; };
 		49E94E6E2A4C8776006C990D /* GridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E94E6D2A4C8776006C990D /* GridViewModel.swift */; };
 		49FA93992A420BF000A30B8A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FA93982A420BF000A30B8A /* WebView.swift */; };
@@ -102,6 +104,8 @@
 		49A7C5512A43513C005FBB70 /* PersonDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsView.swift; sourceTree = "<group>"; };
 		49A7C5532A435150005FBB70 /* PersonDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewModel.swift; sourceTree = "<group>"; };
 		49A7C5562A435C58005FBB70 /* StringHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringHelper.swift; sourceTree = "<group>"; };
+		49ACB4DE2A4DD4CE004FA33C /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		49ACB4E02A4DD4E4004FA33C /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		49E94E6B2A4C8768006C990D /* GridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridView.swift; sourceTree = "<group>"; };
 		49E94E6D2A4C8776006C990D /* GridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridViewModel.swift; sourceTree = "<group>"; };
 		49FA93982A420BF000A30B8A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
@@ -251,6 +255,7 @@
 			children = (
 				49A7C5502A435118005FBB70 /* CastDetailView */,
 				49FF1E352A3A15D80055EFA3 /* MediaDetailsView */,
+				49ACB4DD2A4DD4B8004FA33C /* SearchView */,
 				49FF1E342A3A13680055EFA3 /* Extensions */,
 				492F822F2A2F845B007032A4 /* Scenes */,
 				4981D3A02A2E33FC00D63AD4 /* Components */,
@@ -299,6 +304,15 @@
 				49A7C5562A435C58005FBB70 /* StringHelper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		49ACB4DD2A4DD4B8004FA33C /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				49ACB4DE2A4DD4CE004FA33C /* SearchView.swift */,
+				49ACB4E02A4DD4E4004FA33C /* SearchViewModel.swift */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 		49E94E692A4C86D1006C990D /* Image */ = {
@@ -491,9 +505,11 @@
 				49FF1E372A3A15F60055EFA3 /* MediaDetailsView.swift in Sources */,
 				492F82342A2F85D7007032A4 /* ErrorResponse.swift in Sources */,
 				49A7C5572A435C58005FBB70 /* StringHelper.swift in Sources */,
+				49ACB4DF2A4DD4CE004FA33C /* SearchView.swift in Sources */,
 				4981D3A22A2E34E200D63AD4 /* ImageCard.swift in Sources */,
 				49FF1E3B2A3A18CA0055EFA3 /* MediaDetails.swift in Sources */,
 				49A7C5522A43513C005FBB70 /* PersonDetailsView.swift in Sources */,
+				49ACB4E12A4DD4E4004FA33C /* SearchViewModel.swift in Sources */,
 				492F822C2A2F453F007032A4 /* LoginButton.swift in Sources */,
 				499DB25D2A30DC620084D5D7 /* Authentication.swift in Sources */,
 				49FA93992A420BF000A30B8A /* WebView.swift in Sources */,

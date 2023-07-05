@@ -8,23 +8,37 @@
 import Foundation
 
 class GridViewModel: ObservableObject {
-    @Published var rows: [HomeRow] = []
+    @Published var gridModel: [Result] = []
+    @Published var isEnd: Bool = false
     
-    var endpoints: [Endpoint] = [
-        Endpoint(path: "movie/popular", title: "Popular Movies"),
-        Endpoint(path: "movie/top_rated", title: "Top Rated Movies"),
-        Endpoint(path: "movie/upcoming", title: "Upcoming Movies"),
-        Endpoint(path: "tv/airing_today", title: "Airing TV Shows Today"),
-        Endpoint(path: "tv/popular", title: "Popular TV Shows"),
-        Endpoint(path: "tv/top_rated", title: "Top Rated TV Shows"),
-        Endpoint(path: "trending/all/week", title: "Trending Now")
-    ]
+    let enpoint: String
+    var params: [String : Any]
+    let type: RowType
+    var page: Int = 1
     
-    func fetchContentList() {
-        for endpoint in endpoints {
-            ApiService.get(endPoint: endpoint.path) { (result: ResultList) in
-                self.rows.append(.init(title: endpoint.title, list: result, endPoint: endpoint.path, params: endpoint.params))
+    init(enpoint: String, params: [String : Any], type: RowType) {
+        self.enpoint = enpoint
+        self.params = params
+        self.type = type
+        
+        loadGrid()
+    }
+    
+    func loadGrid() {
+        params["page"] = page
+        
+        if type == .media {
+            ApiService.get(endPoint: enpoint, parameters: params) { (details: ResultList) in
+                self.gridModel.append(contentsOf: details.result)
+                self.page += 1
+                self.isEnd = details.page >= details.totalPage
             }
+        }
+    }
+    
+    func next(result: Result) {
+        if gridModel.count >= 4, result == gridModel[gridModel.count - 3] {
+            loadGrid()
         }
     }
 }

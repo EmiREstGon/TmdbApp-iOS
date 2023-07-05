@@ -8,25 +8,51 @@
 import SwiftUI
 
 struct GridView: View {
-    @StateObject var gridViewModel: GridViewModel
-
-    init() {
-        let viewModel = GridViewModel()
-        _gridViewModel = StateObject(wrappedValue: viewModel)
+    @StateObject private var gridViewModel: GridViewModel
+    
+    init(endpoint: String, params: [String : Any], type: RowType) {
+        self._gridViewModel = StateObject<GridViewModel>(wrappedValue: .init(enpoint: endpoint, params: params, type: type))
     }
     
+    let gridLayout: [GridItem] = [
+        GridItem(.flexible()),
+        GridItem(.flexible()),
+        GridItem(.flexible())
+    ]
+    
     var body: some View {
-        Text("Grid")
-        Grid(alignment: .leading) {
-            ForEach(gridViewModel.rows) { row in
-                ImageCardRow(title: row.title, imageCards: row.list.result, endPoint: row.endPoint, params: row.params)
+        ScrollView {
+            Section(footer: footer()) {
+                LazyVGrid(columns: gridLayout, spacing: 10) {
+                    ForEach(gridViewModel.gridModel) { result in
+                        ImageCard(result: result)
+                            .toDetailsView(result: result)
+                            .onAppear {
+                                if !gridViewModel.isEnd {
+                                    DispatchQueue.global(qos: .userInitiated).async {
+                                        gridViewModel.next(result: result)
+                                    }
+                                }
+                            }
+                    }
+                }
+                .padding()
             }
+        }
+    }
+    
+    @ViewBuilder
+    func footer() -> some View {
+        if gridViewModel.isEnd {
+            Text("Fin")
+        } else {
+            ProgressView()
         }
     }
 }
 
-struct GridView_Previews: PreviewProvider {
-    static var previews: some View {
-        GridView()
-    }
-}
+//struct GridView_Previews: PreviewProvider {
+//    static var previews: some View {
+//        GridView()
+//    }
+//}
